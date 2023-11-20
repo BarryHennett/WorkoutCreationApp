@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WorkoutCreation.MVVM.Views.AddExercisePage"
+             xmlns:viewmodel="clr-namespace:WorkoutCreation.MVVM.ViewModels"
+             x:DataType="viewmodel:WorkoutViewModel"
+             Title="AddExercisePage">
+    <VerticalStackLayout>
+        <!-- Header -->
+        <StackLayout Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+            <Label Text="Add Exercise" FontSize="Title" FontAttributes="Bold" HorizontalOptions="StartAndExpand" />
+            <!-- Add any additional header elements or icons here -->
+        </StackLayout>
+
+        <!-- Exercise Name Input -->
+        <Entry Placeholder="Enter Exercise Name"
+               x:Name="exerciseNameEntry"
+               FontSize="20"
+               Text="{Binding Name}"
+               Margin="10" />
+
+        <!-- Other Exercise Details Input (e.g., Sets, Reps, etc.) -->
+        <Entry Placeholder="Enter Sets Completed" 
+               x:Name="setsCompletedEntry" 
+               FontSize="20"
+               Text="{Binding Sets}"
+               Margin="10"  />
+
+        <Entry Placeholder="Enter Reps Completed" 
+               x:Name="repsCompletedEntry" 
+               FontSize="20"
+               Text="{Binding Reps}"
+               Margin="10" />
+
+        <!-- Add other input fields as needed for exercise details -->
+
+        <!-- Save Exercise Button -->
+        <Button Text="Save Exercise" 
+                Command="{Binding AddCommand}"
+                Clicked="OnSaveExerciseClicked" 
+                Margin="10" />
+    </VerticalStackLayout>
+</ContentPage>
