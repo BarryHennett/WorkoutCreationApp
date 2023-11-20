@@ -4,7 +4,7 @@
              x:Class="WorkoutCreation.MVVM.Views.AddExercisePage"
              xmlns:viewmodel="clr-namespace:WorkoutCreation.MVVM.ViewModels"
              x:DataType="viewmodel:WorkoutViewModel"
-             Title="AddExercisePage">
+             Title="Add Exercises">
     <VerticalStackLayout>
         <!-- Header -->
         <StackLayout Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
@@ -19,7 +19,7 @@
                Text="{Binding Name}"
                Margin="10" />
 
-        <!-- Other Exercise Details Input (e.g., Sets, Reps, etc.) -->
+        <!-- Other Exercise Details Input (Sets, Reps,) -->
         <Entry Placeholder="Enter Sets Completed" 
                x:Name="setsCompletedEntry" 
                FontSize="20"

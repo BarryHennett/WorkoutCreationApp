@@ -4,47 +4,29 @@
              x:Class="WorkoutCreation.MVVM.Views.WorkoutCreatePage"
              xmlns:viewmodel="clr-namespace:WorkoutCreation.MVVM.ViewModels"
              x:DataType="viewmodel:WorkoutViewModel"
-             Title="WorkoutCreatePage">
+             Title="Workout Create">
 
     <StackLayout>
-        <Label Text="Welcome to Workout App!"/>
-        <!--<Image Source="Thin_Proteine_Plus_Logo.jpg"/>-->
-        <Button  Text="Create Exercise" Clicked="Button_Clicked" 
-                 HorizontalOptions="Center"
-                 VerticalOptions="Center"/>
+        <!--Button for Creating Exercises-->
+        <Button  
+            Margin="20"
+            Text="Create Exercise" 
+            Clicked="Button_Clicked" 
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            HeightRequest="70"
+            WidthRequest="200"/>
+        
+        <!--Button for Viewing exercises-->
+        <Button  
+            Margin="20"
+            Text="View Exercises" 
+            Clicked="Button_Clicked_1" 
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            HeightRequest="70"
+            WidthRequest="200"/>
 
-        <CollectionView Grid.Row="2" Grid.ColumnSpan="2"
-                        ItemsSource="{Binding Items}"
-                        SelectionMode="None">
 
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="{x:Type x:String}">
-                    <SwipeView>
-                        <SwipeView.RightItems>
-                            <SwipeItems>
-                                <SwipeItem Text="Delete"
-                                           BackgroundColor="Red"
-                                           Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:WorkoutViewModel}},Path=DeleteCommand}"
-                                           CommandParameter="{Binding .}"/>
-                            </SwipeItems>
-                        </SwipeView.RightItems>
-
-                        <Grid Padding="0,5">
-                            <Frame BackgroundColor="DarkGoldenrod">
-                                <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer 
-                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:WorkoutViewModel}}}"
-                                        CommandParameter="{Binding .}"/>
-
-                                </Frame.GestureRecognizers>
-                                <Label Text="{Binding .}"
-                                   FontSize="18"
-                                   TextColor="White"/>
-                            </Frame>
-                        </Grid>
-                    </SwipeView>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
     </StackLayout>
 </ContentPage>
