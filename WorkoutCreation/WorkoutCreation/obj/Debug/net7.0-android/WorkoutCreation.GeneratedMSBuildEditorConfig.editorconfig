@@ -38,12 +38,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = WorkoutCreation.MVVM.Views
 build_metadata.AdditionalFiles.TargetPath = MVVM\Views\AddExercisePage.xaml
 build_metadata.AdditionalFiles.RelativePath = MVVM\Views\AddExercisePage.xaml
 
-[C:/Users/harra/Desktop/Term 4/WorkoutCreationApp/WorkoutCreation/WorkoutCreation/MVVM/Views/FoodIntakePage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = WorkoutCreation.MVVM.Views.FoodIntakePage.xaml
-build_metadata.AdditionalFiles.TargetPath = MVVM\Views\FoodIntakePage.xaml
-build_metadata.AdditionalFiles.RelativePath = MVVM\Views\FoodIntakePage.xaml
-
 [C:/Users/harra/Desktop/Term 4/WorkoutCreationApp/WorkoutCreation/WorkoutCreation/MVVM/Views/ViewExercisePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = WorkoutCreation.MVVM.Views.ViewExercisePage.xaml

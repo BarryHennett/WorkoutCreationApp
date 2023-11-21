@@ -20,9 +20,6 @@
     <MauiXaml Update="MVVM\Views\AddExercisePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="MVVM\Views\FoodIntakePage.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
     <MauiXaml Update="MVVM\Views\ViewExercisePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
