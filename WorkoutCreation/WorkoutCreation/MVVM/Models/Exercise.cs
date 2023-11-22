@@ -12,7 +12,9 @@ namespace WorkoutCreation.MVVM.Models
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
         public string Name { get; set; }
-        public int Sets { get; set; }
-        public int Reps { get; set; }
+        public decimal Sets { get; set; }
+        public decimal Reps { get; set; }
+
+        public Exercise Clone() => MemberwiseClone() as Exercise;
     }
 }

@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using WorkoutCreation.MVVM.Views;
+using WorkoutCreation.MVVM.Data;
+using WorkoutCreation.MVVM.ViewModels;
 
 namespace WorkoutCreation
 {
@@ -20,7 +22,11 @@ namespace WorkoutCreation
 		builder.Logging.AddDebug();
 #endif
 
-            builder.Services.AddTransient<WorkoutCreatePage>();
+            builder.Services.AddSingleton<DatabaseContext>();
+            builder.Services.AddSingleton<WorkoutViewModel>();
+            builder.Services.AddSingleton<AddExercisePage>();
+
+            //builder.Services.AddTransient<WorkoutCreatePage>();
 
 
             return builder.Build();

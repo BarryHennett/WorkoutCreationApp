@@ -6,7 +6,7 @@
              x:DataType="viewmodel:WorkoutViewModel"
              Title="View Exercises">
     <VerticalStackLayout>
-        <CollectionView Grid.Row="2" Grid.ColumnSpan="2"
+        <!--<CollectionView Grid.Row="2" Grid.ColumnSpan="2"
                         ItemsSource="{Binding Items}"
                         SelectionMode="None">
 
@@ -38,6 +38,6 @@
                     </SwipeView>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
-        </CollectionView>
+        </CollectionView>-->
     </VerticalStackLayout>
 </ContentPage>

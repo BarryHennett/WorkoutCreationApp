@@ -8,30 +8,44 @@
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
         </member>
-        <member name="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.Items">
-            <inheritdoc cref="F:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.items"/>
+        <member name="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.Exercises">
+            <inheritdoc cref="F:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel._exercises"/>
         </member>
-        <member name="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.Name">
-            <inheritdoc cref="F:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.name"/>
+        <member name="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.OperatingExercise">
+            <inheritdoc cref="F:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel._operatingExercise"/>
         </member>
-        <member name="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.Sets">
-            <inheritdoc cref="F:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.sets"/>
+        <member name="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.IsBusy">
+            <inheritdoc cref="F:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel._isBusy"/>
         </member>
-        <member name="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.Reps">
-            <inheritdoc cref="F:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.reps"/>
+        <member name="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.BusyText">
+            <inheritdoc cref="F:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel._busyText"/>
         </member>
-        <member name="F:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.addCommand">
-            <summary>The backing field for <see cref="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.AddCommand"/>.</summary>
+        <member name="F:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.loadExercisesCommand">
+            <summary>The backing field for <see cref="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.LoadExercisesCommand"/>.</summary>
         </member>
-        <member name="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.AddCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.Add"/>.</summary>
+        <member name="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.LoadExercisesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.LoadExercisesAsync"/>.</summary>
         </member>
-        <member name="F:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.deleteCommand">
-            <summary>The backing field for <see cref="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.DeleteCommand"/>.</summary>
+        <member name="F:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.setOperatingExerciseCommand">
+            <summary>The backing field for <see cref="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.SetOperatingExerciseCommand"/>.</summary>
         </member>
-        <member name="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.DeleteCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.Delete(System.String)"/>.</summary>
+        <member name="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.SetOperatingExerciseCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.SetOperatingExercise(WorkoutCreation.MVVM.Models.Exercise)"/>.</summary>
+        </member>
+        <member name="F:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.saveExerciseCommand">
+            <summary>The backing field for <see cref="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.SaveExerciseCommand"/>.</summary>
+        </member>
+        <member name="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.SaveExerciseCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.SaveExerciseAsync"/>.</summary>
+        </member>
+        <member name="F:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.deleteExerciseCommand">
+            <summary>The backing field for <see cref="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.DeleteExerciseCommand"/>.</summary>
+        </member>
+        <member name="P:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.DeleteExerciseCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:WorkoutCreation.MVVM.ViewModels.WorkoutViewModel.DeleteExerciseAsync(System.Int32)"/>.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
             <summary>
@@ -39,17 +53,17 @@
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Items">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Items" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Exercises">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Exercises" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Name" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.OperatingExercise">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "OperatingExercise" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Sets">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Sets" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Reps">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Reps" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.BusyText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "BusyText" generated properties.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
@@ -57,17 +71,17 @@
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Items">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Items" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Exercises">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Exercises" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.OperatingExercise">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "OperatingExercise" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Sets">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Sets" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Reps">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Reps" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.BusyText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "BusyText" generated properties.</summary>
         </member>
     </members>
 </doc>
